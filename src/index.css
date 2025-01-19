@@ -1,0 +1,32 @@
+* {margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    margin-bottom: 15px;
+    text-align: center; 
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+}
+
+input {
+    padding: 0.25rem;
+    width: 15%;
+    font-size: 1rem;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 0.25rem;
+}
+
+.btn {
+    padding: 0.25rem;
+    width: 7%;
+    font-size: 1rem;
+}
