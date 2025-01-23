@@ -30,11 +30,13 @@ function App() {
       console.log(resp)
       const { text, icon } = resp.data.current.condition
       const { name, country, localtime } = resp.data.location
+      const { temp_c, temp_f } = resp.data.current
       setWeather({
         type: text,
         image: icon,
+        temp: [temp_c, temp_f],
       })
-      setLocation ({
+      setLocation({
         name: name,
         country: country,
         localtime: localtime,
@@ -60,9 +62,11 @@ function App() {
           <button onClick={getWeather} className='btn'>Search</button>
         </div >
         <main>
-          <Card 
-          weather={weather}
-          location={location}/>
+          <div className='row'>
+            <Card
+              weather={weather}
+              location={location} />
+          </div>
         </main>
       </div>
     </>

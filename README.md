@@ -8,16 +8,15 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 Loading/Error Handling: Handle loading states and errors (e.g., invalid city names or network issues).
+
 2.4. Time Handling
 
 Convert Local Time to User’s Time Zone: Convert the time displayed (location.localtime) into the user’s local time using the timezone (location.tz_id), or use libraries like moment.js or date-fns for time formatting.
+
 2.5. Weather History
 
 Previous Weather: Allow users to view historical weather data by showing the last updated time (current.last_updated) and comparing it to the current time.
 
-3.2. Multiple Cities Search
-
-Search Multiple Cities: Implement the ability to search and display weather information for multiple cities at the same time, and manage the UI layout accordingly.
 3.3. Temperature Unit Toggle
 
 Toggle Between Celsius and Fahrenheit: Let users toggle between Celsius and Fahrenheit for the temperature, updating the displayed values accordingly.
